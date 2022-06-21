@@ -1,0 +1,87 @@
+.card__container {
+  padding: 10px 20px;
+  box-shadow: 1px 1px 4px 4px #eee;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.card__container > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.card__container > h3 {
+  margin-top: 15px;
+  color: var(--primary-color);
+}
+.card__container > p {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+}
+.card__container > .contact {
+  border-top: 2px solid #eee;
+  padding-block: 10px;
+}
+.card__container > .contact > a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.5s;
+}
+.card__container > .contact > a > span {
+  position: relative;
+  padding-inline-start: 10px;
+}
+.card__container > .contact > a > span::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--secondary-color);
+  z-index: 1;
+}
+.card__container > .contact > a:hover span {
+  color: var(--primary-color);
+}
+.contact i {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-top: 2px solid #eee;
+  padding-block: 10px;
+  margin-top: 10px;
+}
+.actions > button {
+  border-color: transparent;
+  padding: 5px 15px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.save__btn {
+  background-color: #38ba7d;
+}
+.delete__btn {
+  background-color: #f34541;
+}
